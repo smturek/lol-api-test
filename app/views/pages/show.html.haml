@@ -1,1 +1,19 @@
-%img{src: "http://ddragon.leagueoflegends.com/cdn/4.2.6/img/champion/#{@champion[:image][:full]}"}
+.container
+
+  .page-header
+    %img{src: "http://ddragon.leagueoflegends.com/cdn/4.2.6/img/champion/#{@champion[:image][:full]}"}
+    %h1
+      = "#{@champion[:name]} #{@champion[:title]}"
+
+  %table.table
+    %thead
+      %tr
+        %th Stat
+        %th Value
+    %tbody
+    - @champion[:stats].each do |stat, value|
+      %tr
+        %td
+          = stat
+        %td
+          = value

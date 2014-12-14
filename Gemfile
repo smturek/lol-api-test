@@ -17,6 +17,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'haml'
 gem 'json'
 gem 'faraday'
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'autoprefixer-rails'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
