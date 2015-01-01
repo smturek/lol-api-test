@@ -1,0 +1,15 @@
+%table
+  %thead
+    %tr
+      %th Name
+      %th Title
+  %tbody
+  - @champion_list[:data].each do |champion, data|
+    %tr
+      %td
+        = link_to champion, champion_path(:id => data[:id])
+      %td
+        = data[:title]
+
+
+  =@champion_list

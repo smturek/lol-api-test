@@ -1,0 +1,16 @@
+%table.table
+  %thead
+    %tr
+      %th Name
+      %th Attributes
+  %tbody
+  - @item_list[:data].each do |item, data|
+    %tr
+      %td
+        = link_to data[:name], item_path(:id => data[:id])
+      %td
+        = raw data[:description]
+
+
+
+= @item_list

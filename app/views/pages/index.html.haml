@@ -1,16 +1,2 @@
-
-%table
-  %thead
-    %tr
-      %th ID
-      %th Name
-      %th Title
-  %tbody
-  - @champion_list[:data].each do |champion, data|
-    %tr
-      %td
-        = data[:id]
-      %td
-        = link_to champion, show_path(:id => data[:id])
-      %td
-        = data[:title]
+.page-header
+  %h1 Welcome
