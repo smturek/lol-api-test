@@ -12,4 +12,6 @@
         = data[:title]
 
 
-  =@champion_list
+  - @champion_list[:data].each do |champ|
+    = champ
+    %br

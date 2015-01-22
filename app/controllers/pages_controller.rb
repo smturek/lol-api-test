@@ -19,4 +19,12 @@ class PagesController < ApplicationController
     @item_list = @import.items
   end
 
+  def randomizer
+    @roles = ["top", "jungle", "mid", "adc", "support"]
+    @players = ["Vico", "Liliana", "Dotabase", "younglung", "nerdybynature28"]
+
+    @roles = @roles.shuffle
+    #@players = @players.shuffle
+  end
+
 end

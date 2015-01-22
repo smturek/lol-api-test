@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get '/item' => 'pages#item', as: :item
 
+  get '/randomizer' => 'pages#randomizer', as: :randomizer
+
 end
